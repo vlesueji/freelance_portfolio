@@ -1,0 +1,111 @@
+@media (max-width:1054px) {
+    .burger {
+        display: flex;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-list.opened {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left:60%;
+        background-color: rgb(241, 241, 241);
+        width: 40%;
+        font-size: 45px;
+        opacity: .98;
+        align-items: end;
+        padding-right: 50px;
+    }
+    .header {
+        height: 862px;
+        padding-top: 0;
+        margin-bottom: 90px;
+        background-color: rgb(241, 241, 241);
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    .content-about {
+        max-width: 500px;
+        padding-top: 20px;
+    }
+    .content-about>p{
+        margin-top: 21px;
+    }
+    .content-hero {
+        align-self: center;
+    }
+    .portfolio {
+        text-align: center;
+        height: 100%;
+        background-color: rgb(241, 241, 241);
+        padding-top: 90px;
+    }
+}
+@media (max-width:730px) {
+    .burger {
+        display: flex;
+    }
+    .nav-list {
+        display: none;
+    }
+    .nav-list.opened {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left:0;
+        font-size: 45px;
+        background-color: rgb(241, 241, 241);
+        width: 100%;
+        opacity: .98;
+        align-items: end;
+        padding-right: 50px;
+    }
+    /* header */
+    .header {
+        height: 950px;
+        padding-top: 0;
+        margin-bottom: 90px;
+        background-color: rgb(241, 241, 241);
+    }
+    .container {
+        height: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        height: 100%;
+    }
+    .content-about {
+        max-width: 500px;
+        padding-top: 20px;
+    }
+    .content-about>p{
+        margin-top: 21px;
+    }
+    .content-hero {
+        align-self: center;
+    }
+    /* services */
+    .services {
+        height: 850px;
+        margin-bottom: 7px;
+    }
+    .services-row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .service-card-img {
+        margin-bottom: 29px;
+        align-items: center;
+    }
+
+    .service-card p{
+        max-width: 300px;
+    }
+}
