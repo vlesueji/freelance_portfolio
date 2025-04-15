@@ -17,32 +17,32 @@
         align-items: end;
         padding-right: 50px;
     }
+    .header-nav {
+        height: 10vh;
+    }
     .header {
-        height: 862px;
-        padding-top: 0;
-        margin-bottom: 90px;
+        height: fit-content;
         background-color: rgb(241, 241, 241);
     }
     .content {
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
     }
     .content-about {
-        max-width: 500px;
-        padding-top: 20px;
-    }
-    .content-about>p{
-        margin-top: 21px;
-    }
+        max-width: 100%;
+        padding-bottom: 1em;
+    }   
     .content-hero {
         align-self: center;
+    }
+
+    .service-card {
+        text-align: start;
     }
     .portfolio {
         text-align: center;
         height: 100%;
         background-color: rgb(241, 241, 241);
-        padding-top: 90px;
     }
 }
 @media (max-width:730px) {
@@ -66,9 +66,9 @@
     }
     /* header */
     .header {
-        height: 950px;
+        height: fit-content;
         padding-top: 0;
-        margin-bottom: 90px;
+        /* margin-bottom: 90px; */
         background-color: rgb(241, 241, 241);
     }
     .container {
@@ -77,35 +77,25 @@
     .content {
         display: flex;
         flex-direction: column;
-        padding-top: 20px;
         height: 100%;
     }
-    .content-about {
-        max-width: 500px;
-        padding-top: 20px;
-    }
-    .content-about>p{
-        margin-top: 21px;
-    }
+   
     .content-hero {
         align-self: center;
     }
     /* services */
     .services {
-        height: 850px;
-        margin-bottom: 7px;
+        height: fit-content;
     }
     .services-row {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 2em;
+    }
+    .service-card {
+        text-align: center;
     }
     .service-card-img {
-        margin-bottom: 29px;
         align-items: center;
-    }
-
-    .service-card p{
-        max-width: 300px;
     }
 }

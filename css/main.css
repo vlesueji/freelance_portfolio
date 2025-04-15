@@ -52,7 +52,7 @@ p {
     /* height: 689px; */
     height: 95vh;
     padding-top: 0;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
     background-color: rgb(241, 241, 241);
 }
 .header-nav {
@@ -157,40 +157,48 @@ p {
     padding-bottom: 40vh;
 }
 .content-about>p{
-    margin-top: 21px;
+    margin-top: 2em;
 }
 
 /* SERVICES */
 .services {
-    height: 310px;
-    margin-bottom: 7px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    height: fit-content;
 }
 .services-row {
     display: flex;
-    gap: 30px;
+    gap: 2em;
+}
+.service-card {
+    text-align: center;
+}
+
+.service-card p {
+    text-align: start;
 }
 .service-card-img {
-    margin-bottom: 29px;
+    margin-bottom: 2em;
 }
 /*      portfolio      */
 .portfolio {
     text-align: center;
-    height: 2172px;
+    height: fit-content;
     background-color: rgb(241, 241, 241);
-    padding-top: 90px;
+    padding-top: 3em;
 }
+
 .portfolio h2 {
-    margin-bottom: 62px;
+    padding-bottom: 1em;
 }
-.portfolio img {
-    margin-bottom: 39px;
-}
+
 .portfolio figcaption {
     font-size: 18px;
     line-height: 27px;
     color: #070707;
     text-decoration: underline;
-    margin-bottom: 89px;
+    padding-bottom: 5em;
+    padding-top: 1em;
 }
 /* CONTACTS */
 .contacts {
