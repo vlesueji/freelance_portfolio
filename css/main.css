@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import "./media.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Poppins", serif;
     font-weight: 400;
@@ -49,28 +53,33 @@ p {
 
 /*          HEADER        */
 .header {
-    /* height: 689px; */
-    height: 95vh;
-    padding-top: 0;
-    /* margin-bottom: 90px; */
+    height: 100vh;
     background-color: rgb(241, 241, 241);
+    position: relative;
+    top: -5vh;
 }
 .header-nav {
     height: 5vh;
-    padding-top: 45px;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     position: sticky;
     top: 0;
     background-color: rgb(241, 241, 241);
-    z-index: 1;
-    transition: background-color 1s;
+    z-index: 100;
+    transition: background-color 1s, opacity 1s ,visibility 0.9s ease-in-out;
+}
 
-}
 .scrolled {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: white;
 }
+
+.scrolled-down {
+    opacity: 0;
+    visibility: hidden;
+}
+
 /*          LOGO            */
 .logo {
     padding: 0 13px 4px 0;
@@ -203,7 +212,8 @@ p {
 /* CONTACTS */
 .contacts {
     text-align: center;
-    margin-top: 90px;
+    padding-top: 25vh;
+    height: 100vh;
     max-width: 342px;
     margin-inline: auto;
 }

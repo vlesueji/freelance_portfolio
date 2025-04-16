@@ -65,6 +65,9 @@
         padding-right: 50px;
     }
     /* header */
+    .header-nav {
+        height: 10vh;
+    }
     .header {
         height: fit-content;
         padding-top: 0;
